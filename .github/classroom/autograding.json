@@ -33,7 +33,7 @@
     {
       "name": "exercise-4-4-1",
       "setup": "",
-      "run": "pytest tests/test_exercise_4_4_1.py",
+      "run": "python -m pytest tests/test_exercise_4_4_1.py",
       "input": "",
       "output": "",
       "comparison": "included",

@@ -3,7 +3,7 @@
     {
       "name": "setup",
       "setup": "",
-      "run": "python3 -m pip install flake8 pep8-naming flake8-docstrings pytest",
+      "run": "sudo -H python3 -m pip install flake8 pep8-naming flake8-docstrings pytest",
       "input": "",
       "output": "",
       "comparison": "included",

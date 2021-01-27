@@ -12,7 +12,7 @@
     },
     {
       "name": "package-install",
-      "setup": "sudo -H pip3 install setuptools",
+      "setup": "sudo -H pip3 install setuptools pytest",
       "run": "python3 -m pip install -e .",
       "input": "",
       "output": "",

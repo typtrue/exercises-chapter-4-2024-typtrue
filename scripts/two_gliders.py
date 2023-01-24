@@ -1,3 +1,4 @@
+"""Play Life with two colliding gliders."""
 from life import Game, Pattern, glider
 
 g = Game(30)

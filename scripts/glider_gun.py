@@ -1,3 +1,4 @@
+"""Play Life with a generator of gliders."""
 import life
 
 g = life.Game(40)

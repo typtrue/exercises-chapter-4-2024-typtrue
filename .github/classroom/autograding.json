@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "setup",
-      "setup": "python3 -m pip install -U pip",
-      "run": "python3 -m pip install flake8 pep8-naming flake8-docstrings pytest",
+      "setup": "python3 -m venv venv",
+      "run": "venv/bin/python -m pip install flake8 pep8-naming flake8-docstrings numpy pytest",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -12,8 +12,8 @@
     },
     {
       "name": "package-install",
-      "setup": "sudo -H pip3 install setuptools pytest",
-      "run": "python3 -m pip install -e .",
+      "setup": "",
+      "run": "venv/bin/python -m pip install -e .",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -23,7 +23,7 @@
     {
       "name": "exercise-4-3",
       "setup": "",
-      "run": "python3 -m flake8 life/",
+      "run": "venv/bin/python -m flake8 life/",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -33,7 +33,7 @@
     {
       "name": "exercise-4-4-1",
       "setup": "",
-      "run": "pytest tests/test_exercise_4_4_1.py",
+      "run": "venv/bin/python -m pytest tests/test_exercise_4_4_1.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -43,7 +43,7 @@
     {
       "name": "exercise-4-4-2",
       "setup": "",
-      "run": "pytest tests/test_exercise_4_4_2.py",
+      "run": "venv/bin/python -m pytest tests/test_exercise_4_4_2.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -53,7 +53,7 @@
     {
       "name": "exercise-4-4-3",
       "setup": "",
-      "run": "pytest tests/test_exercise_4_4_3.py",
+      "run": "venv/bin/python -m pytest tests/test_exercise_4_4_3.py",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -63,7 +63,7 @@
     {
       "name": "exercise-4-5",
       "setup": "",
-      "run": "pytest tests/test_exercise_4_5.py",
+      "run": "venv/bin/python -m pytest tests/test_exercise_4_5.py",
       "input": "",
       "output": "",
       "comparison": "included",

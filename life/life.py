@@ -84,6 +84,7 @@ class Game:
         pyplot.show()
 
     def insert(self, p, loc):
+        """Inserts pattern into grid, centred at given coordinates."""
         if not isinstance(p, Pattern):
             return NotImplemented
         game = self.board
@@ -104,22 +105,20 @@ class Pattern:
         self.grid = grid
 
     def flip_vertical(self):
+        """Flips pattern vertically."""
         return Pattern(np.flipud(self.grid))
 
     def flip_horizontal(self):
+        """Flips pattern horizontally."""
         return Pattern(np.fliplr(self.grid))
 
     def flip_diag(self):
+        """Flips pattern along the principle diagonal."""
         return Pattern(self.grid.T)
 
     def rotate(self, n: int):
+        """Rotates pattern by 90 degrees clockwise, n times."""
         grid = self.grid
         for i in range(n):
             grid = np.rot90(grid)
         return Pattern(grid)
-
-
-grid_size = 9
-coordinates = [4, 5]
-g = Game(grid_size)
-g.insert(Pattern(glider), coordinates)
